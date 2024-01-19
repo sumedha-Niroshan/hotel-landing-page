@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Headers from "@/components/Headers";
 import Head from 'next/head';
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +23,10 @@ export default function RootLayout({
         <link rel="stylesheet" href='../../public/font/PlusJakartaSans-VariableFont_wght.ttf' />
       </Head>
      
-      <body className={inter.className}>
+      <body className={inter.className} >
       <Headers/>
         {children}
+        <Footer/>
         </body>
     </html>
   );

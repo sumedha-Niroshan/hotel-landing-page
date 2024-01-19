@@ -1,23 +1,24 @@
-import React from 'react'
+
 
 export default function Headers() {
   return (
-    <header className='font-puls-jakarta-sans'>
-        <div className='flex justify-between items-center h-20'>
+    <header className='sm:overflow-hidden font-puls-jakarta-sans'>
+        <div className='flex justify-between items-center p-6 xl:mx-16 '>
             
-            <div>
-                <ul className='flex gap-10 ml-40 text-base justify-center  '>
-                    <li><p className='font-black mr-9 '>Designspace</p></li>
-                    <li  >Booking </li>
-                    <li> Facilities</li>
-                    <li>Room</li>
-                    <li> Services</li>
-                    <li > Contact</li>
+           
+           
+                <ul className='flex gap-6   '>
+                    <li> <p className='font-black mr-9  md:ml-12 sm:text-lg '>Designspace</p></li>
+                    <li className='hidden md:inline text-slate-700 sm:text-lg' >Booking </li>
+                    <li className='hidden md:inline text-slate-700  sm:text-lg'> Facilities</li>
+                    <li className='hidden md:inline text-slate-700 sm:text-lg'>Room</li>
+                    <li className='hidden md:inline text-slate-700 sm:text-lg'> Services</li>
+                    <li className='hidden md:inline text-slate-700 sm:text-lg'> Contact</li>
                 </ul>
-            </div>
-            <div className='mr-60 flex gap-4'>
-                <button>Login</button>
-                <button className='w-24 h-10 bg-midnight text-white rounded-full'>Sign in</button>
+            
+            <div className='flex gap-4 mx-0 '>
+                <button className="text-lg">Login</button>
+                <button className='w-24 h-8 bg-midnight text-white rounded-full   md:mr-16 text-lg'>Sign in</button>
             </div>
 
         </div>
