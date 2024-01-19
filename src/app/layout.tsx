@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Headers from "@/components/Headers";
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <Head>
+        <link rel="stylesheet" href='../../public/font/PlusJakartaSans-VariableFont_wght.ttf' />
+      </Head>
+     
+      <body className={inter.className}>
+      <Headers/>
+        {children}
+        </body>
     </html>
   );
 }
