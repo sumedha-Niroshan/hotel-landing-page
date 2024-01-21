@@ -1,10 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 import Rectangle from '/Project/hotel-landing-page/hotel-landing-page/public/Rectangle.png'
+import SearchComponents from '@/components/SearchComponents'
+import DatePicker from '@/components/DatePicker'
+import Modal from '@/components/Modal'
+
+
 
 export default function HeroSection() {
+   
   return (
-    <div style={{marginTop:'53px'}} className=' '> 
+    <div style={{marginTop:'53px'}} className='font-puls-jakarta-sans '> 
         <div className=''>
              <div className='p-5'>
                 <div>
@@ -15,16 +21,17 @@ export default function HeroSection() {
                 </div>                             
              </div>
         <div>
-            <Image src={Rectangle} />
+            <Image src={Rectangle} alt='Hero image' />
+            <SearchComponents/>
+            <DatePicker/>
+            <Modal/>
+            
+        </div> 
+        <div>
+            
 
-        
 
-       
-       
-        </div>
-       
-       
-        
+            </div>    
         </div>
     </div>
   )
