@@ -22,7 +22,7 @@ const config: Config = {
       'midnight': '#34CAC6',
       'metal': '#8D8E90',
       'tahiti': '#3ab7bf',
-      'silver': '#ecebff',
+      'silver': '#6E706E',
       'bubble-gum': '#ff77e9',
       'bermuda': '#78dcca',
     },

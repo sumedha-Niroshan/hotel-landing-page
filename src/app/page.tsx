@@ -1,10 +1,13 @@
-import Image from "next/image";
+import HeroSection from "@/containers/HeroSection";
+
 
 export default function Home() {
   return (
-    <main >
+    <main className="relative">
+      
+      <HeroSection />
 
-      <h1>main</h1>
+      
       
     </main>
   );

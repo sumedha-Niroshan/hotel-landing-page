@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <div className="font-puls-jakarta-sans xl:m-16 ">
+    <div className="font-puls-jakarta-sans xl:m-16 z-8 ">
         <div className=" gap-5  p-5  md:flex md:items-center md:justify-between sm:p-14 md:h-[228px]">
             <div className="p-2">
              <p className="text-3xl  md:text-5xl  ">Subscribe us for more   </p> 
