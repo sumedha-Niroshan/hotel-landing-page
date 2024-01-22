@@ -19,9 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="stylesheet" href='../../public/font/PlusJakartaSans-VariableFont_wght.ttf' />
-      </Head>
+     
      
       <body className={inter.className}  >
       <Headers/>
