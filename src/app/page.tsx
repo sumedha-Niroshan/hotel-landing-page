@@ -22,12 +22,12 @@ export default function Home() {
   return (
     <main className='font-puls-jakarta-sans  mt-14 relative' > 
     {/*Hero section start*/}
-      <div  className='font-puls-jakarta-sans  '> 
+      <div  className='font-puls-jakarta-sans  bg-bg-3 '> 
         <div className='sm:flex'>
         <div  className="">
                 <Image src={Rectangle} alt='Hero image' width={0} height={0}  priority={true} />          
               </div> 
-             <div className='p-5 sm:p-20 dm:p-24 bg-bg-3 md:ml-15'>
+             <div className='p-5 sm:p-20 dm:p-24 md:ml-15'>
                 <div className='text-2xl sm:gap-4 text-[#000000] sm:text-6xl sm:font-extrabold'>
                     <p className="sm:m-5" >Experience  </p>
                     <p className="sm:m-5"> something  </p>

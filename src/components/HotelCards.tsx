@@ -64,8 +64,8 @@ export default function HotelCards() {
     <div className='flex flex-wrap justify-between lg:justify-around'>
       {HotelData.map((data) => (
         <div key={data.id} className='bg-white m-1 rounded-xl p-2 sm:w-full md:w-1/2 lg:w-1/3 xl:w-1/4'>
-          <div className='p-0.5'>
-            <Image src={data.img} alt={data.title} width={420} height={420} />
+          <div className='w-full p-0.5'>
+            <Image src={data.img} alt={data.title} width={0} height={0} />
           </div>
           <div className='flex flex-col gap-1 p-4'>
             <p className='text-xl font-bold'>{data.title}</p>
