@@ -8,10 +8,10 @@ interface Place {
 }
 
 const place: Place[] = [
-  { name: 'Bali, Indonesia' },
-  { name: 'Colombo, Sri lanka' },
-  { name: 'Dhilli , India' },
-  { name: 'Kolkata India' },
+  { name: 'Bali,Indonesia' },
+  { name: 'Kandy,srilanka' },
+  { name: 'Dhilli,India' },
+  { name: 'Kolkata,India' },
   
 ];
 
