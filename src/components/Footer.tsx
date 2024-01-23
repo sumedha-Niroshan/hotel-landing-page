@@ -55,7 +55,7 @@ export default function Footer() {
                     <li  className="mt-3">Help Center</li>
                     <li  className="mt-3">Guide</li>
                     <li  className="mt-3">Partner Network</li>
-                    <li  className="mt-3">FAQ's</li>
+                    <li  className="mt-3">FAQ s</li>
                     <li  className="mt-3">Documentation</li>
                 </ul>
             </div>

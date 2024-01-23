@@ -97,7 +97,7 @@ export default function ReviewSection() {
       return (
         <Slider {...settings}>
           {BookingData.map((data ,index)=>(
-            <div className="m-7">
+            <div key={data.id} className="m-7">
             <div className="bg-white m-2 p-12 flex flex-col gap-8">
                 <div>
                 <StarRating  rating={data.rate}/>   

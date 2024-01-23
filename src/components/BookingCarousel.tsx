@@ -87,7 +87,7 @@ export default function BookingCarousel() {
   return (
     <Slider {...settings}>
       {BookingData.map((data ,index)=>(
-        <div className="sm:justify-center sm:flex sm:items-center">
+        <div key={data.id} className="sm:justify-center sm:flex sm:items-center">
             <div className="flex  p-3 bg-bg-3 m-1 rounded-xl">
             <div className="w-full">
                 <Image src={data.img}  alt={data.title} width={0} height={0} />

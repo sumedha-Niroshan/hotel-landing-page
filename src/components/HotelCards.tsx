@@ -68,7 +68,7 @@ export default function HotelCards() {
     <div className='sm:flex sm:flex-wrap  sm:justify-between'>
     {
         HotelData.map((data)=>(
-            <div className='bg-white m-1 rounded-xl p-2  '>
+            <div key={data.id} className='bg-white m-1 rounded-xl p-2  '>
                 <div className='w-full p-0.5'><Image src={data.img} alt={data.title} width={450} height={450}/></div>
                 <div className='flex flex-col gap-1 p-4'>
                 <p className='text-xl font-bold'>{data.title}</p>
