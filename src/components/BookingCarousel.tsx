@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from "next/image";
 import Img_1 from '../../public/image/booking_1.png';
-import Img_2 from '../../public/image/booking_2.png'
+import Img_2 from "../../public/image/Booking_2.png"
 
 const BookingData = [
     {
