@@ -1,7 +1,6 @@
-import HeroSection from "@/containers/HeroSection";
 import Image from 'next/image';
 import React from 'react';
-import Rectangle from '/Project/hotel-landing-page/hotel-landing-page/public/Rectangle.png';
+import Rectangle from '../../public/Rectangle.png';
 import SearchComponents from '@/components/SearchComponents';
 import DatePicker from '@/components/DatePicker';
 import Modal from '@/components/Modal';
@@ -10,9 +9,13 @@ import CheckIn from '../../public/icon/check-in.svg';
 import CheckOut from '../../public/icon/check-out.svg';
 import Room from '../../public/icon/rooms.svg';
 import Search from '../../public/icon/search.svg'
-import BookingSection from "@/containers/BookingSection";
 import BookingCarousel from "@/components/BookingCarousel";
 import HotelCards from "@/components/HotelCards";
+import Icon_1 from "../../public/icon/icon-1.svg";
+import Icon_2 from "../../public/icon/icon-2.svg";
+import Icon_3 from "../../public/icon/icon-3.svg";
+import Base from "../../public/image/Base.png"
+import ReviewSection from '@/components/ReviewSection';
 
 
 export default function Home() {
@@ -113,17 +116,81 @@ export default function Home() {
               <p className="text-3xl font-bold sm:text-6xl">Explore popular hotel</p>
               <div className="sm:flex justify-between">
                 <p className="text-silver sm:text-xl">This can be detailed description or just a short text</p>
-                <button className='bg-midnight font-semibold w-24 h-10 text-white text-base sm:text-lg   rounded-full'>View All</button>  
+                <button className='bg-midnight font-semibold w-24 h-10 text-white text-base sm:text-lg rounded-full'>View All</button>  
               </div>
             </div>
             <div>
               <HotelCards/>
             </div>
           </div>
-
-       
-
         {/*Expore populer holel end*/} 
+
+        {/*We care for .... start*/} 
+
+        
+          <div className="p-6 sm:p-28 sm:flex sm:flex-wrap sm:justify-between">
+            <div className="sm:w-1/2">
+              <p className="text-3xl font-bold sm:text-6xl m-3">We care for each guest like a family</p>
+              <p className="text-base text-silver sm:text-xl">Create useful prototype with our universal wireframes and blocks without any difficulties, just copy and paste wherever you want. </p>
+
+              <div className="flex flex-col gap-3 pl-3 mt-6 sm:gap-6">
+                <div className="flex gap-6">
+                  <div className="w-40 sm:w-auto">
+                    <Image src={Icon_1} alt="icon-1" width={0} height={0}/>
+                  </div>
+                  <div className="">
+                    <p className="text-lg font-bold sm:text-xl">Best quality Hotel</p>
+                    <p className="text-silver">Sometimes features require a short description. This can be detailed description or just a short text.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="w-40 sm:w-auto">
+                    <Image src={Icon_2} alt="icon-1" width={0} height={0}/>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold sm:text-xl">Low price & many promo</p>
+                    <p className="text-silver">Sometimes features require a short description. This can be detailed description or just a short text.</p>
+                  </div>
+                </div>
+                <div className="flex gap-6">
+                  <div className="w-40 sm:w-auto">
+                    <Image src={Icon_3} alt="icon-1" width={0} height={0}/>
+                  </div>
+                  <div>
+                    <p className="text-lg font-bold sm:text-xl">Money back guarantee</p>
+                    <p className="text-silver">Sometimes features require a short description. This can be detailed description or just a short text.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="mt-6">
+              <div className="bg-bg-3 p-6 rounded-xl">
+                <Image src={Base} alt="img"/>
+              </div>
+            </div>
+          </div>
+
+         {/*We care for .... end*/}
+
+         {/* Review section  start*/}  
+         <div className="bg-bg-3  p-5 sm:p-28">
+          <div>
+            <p className='text-3xl font-bold my-3 sm:text-6xl'>What people say..</p>
+          </div>
+          <div className='sm:flex justify-between'>
+            <p className='text-base text-silver sm:text-xl'>This can be detailed description or just a short text.</p>
+            <button className='bg-midnight font-semibold w-24 h-10 text-white text-base sm:text-lg rounded-full'>View All</button>  
+          </div>
+          <div>
+            <ReviewSection/>
+          </div>
+         </div>
+
+
+
+
+         {/* Review section  start*/}  
+
 
 
 
