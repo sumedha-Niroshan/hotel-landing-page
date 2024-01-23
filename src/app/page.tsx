@@ -12,6 +12,7 @@ import Room from '../../public/icon/rooms.svg';
 import Search from '../../public/icon/search.svg'
 import BookingSection from "@/containers/BookingSection";
 import BookingCarousel from "@/components/BookingCarousel";
+import HotelCards from "@/components/HotelCards";
 
 
 export default function Home() {
@@ -97,7 +98,7 @@ export default function Home() {
         </div>
         <div className='sm:flex justify-between items-center'>
             <p className='text-silver text-base sm:text-xl'>This can be detailed description or just a short text.</p>
-            <button className='bg-[#cad7d5] w-24 h-10 text-midnight text-base sm:text-lg   rounded-full'>View All</button>     
+            <button className='bg-bg-3 font-bold w-24 h-10 text-midnight text-base sm:text-lg   rounded-full'>View All</button>     
         </div>
         <div className="mt-6">
         <BookingCarousel/>
@@ -107,7 +108,23 @@ export default function Home() {
         {/*Booking section Start*/}  
 
         {/*Expore populer holel Start*/} 
-         
+        <div className="bg-bg-3  p-5 sm:p-28">
+            <div className="flex flex-col gap-4">
+              <p className="text-3xl font-bold sm:text-6xl">Explore popular hotel</p>
+              <div className="sm:flex justify-between">
+                <p className="text-silver sm:text-xl">This can be detailed description or just a short text</p>
+                <button className='bg-midnight font-semibold w-24 h-10 text-white text-base sm:text-lg   rounded-full'>View All</button>  
+              </div>
+            </div>
+            <div>
+              <HotelCards/>
+            </div>
+          </div>
+
+       
+
+        {/*Expore populer holel end*/} 
+
 
 
         

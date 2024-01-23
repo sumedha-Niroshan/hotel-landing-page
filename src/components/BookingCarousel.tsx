@@ -89,7 +89,7 @@ export default function BookingCarousel() {
       {BookingData.map((data ,index)=>(
         <div className="sm:justify-center sm:flex sm:items-center">
             <div className="flex  p-3 bg-bg-3 m-1 rounded-xl">
-            <div className="">
+            <div className="w-full">
                 <Image src={data.img}  alt={data.title} width={0} height={0} />
             </div>
             <div className="p-1  flex flex-col justify-between items-center sm:p-0 " >
