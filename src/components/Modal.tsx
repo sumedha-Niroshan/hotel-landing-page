@@ -32,7 +32,7 @@ export default function Modal() {
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Listbox.Options className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
+              <Listbox.Options className="absolute mt-1 max-h-60 w-56 overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black/5 focus:outline-none sm:text-sm">
                 <div className='gap-3 text-lg'>
                <div className='flex gap-4 '>
                 <div>Rooms</div>
@@ -46,7 +46,7 @@ export default function Modal() {
                 
                <div className='flex gap-4 text-lg'>
                 <div className=''>Guest</div>
-                <div className='flex gap-5'>
+                <div className='flex gap-5 ml-2'>
                 <PlusCircleIcon  onClick={()=>{setGuest(guest+1)}} className="h-6 w-6 text-gray-500" />
                 <span >{guest}</span>
                 <MinusCircleIcon onClick={() => setGuest(Math.max(1, 1, guest -1))} className="h-6 w-6 text-gray-500" />
