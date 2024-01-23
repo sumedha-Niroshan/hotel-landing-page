@@ -69,7 +69,7 @@ export default function HotelCards() {
     {
         HotelData.map((data)=>(
             <div key={data.id} className='bg-white m-1 rounded-xl p-2  '>
-                <div className='w-full p-0.5'><Image src={data.img} alt={data.title} width={450} height={450}/></div>
+                <div className=' p-0.5'><Image src={data.img} alt={data.title} width={420} height={420}/></div>
                 <div className='flex flex-col gap-1 p-4'>
                 <p className='text-xl font-bold'>{data.title}</p>
                 <div className='flex justify-between '>
