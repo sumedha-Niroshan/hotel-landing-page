@@ -25,7 +25,10 @@ const config: Config = {
       'tahiti': '#3ab7bf',
       'silver': '#6E706E',
       'bubble-gum': '#ff77e9',
-      'bermuda': '#78dcca',
+      'bermuda': '#DAEBE8',
+      'bg-3': '#F4F9F8',
+
+      
     },
   },
   plugins: [],

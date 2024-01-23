@@ -10,11 +10,14 @@ import CheckIn from '../../public/icon/check-in.svg';
 import CheckOut from '../../public/icon/check-out.svg';
 import Room from '../../public/icon/rooms.svg';
 import Search from '../../public/icon/search.svg'
+import BookingSection from "@/containers/BookingSection";
+import BookingCarousel from "@/components/BookingCarousel";
 
 
 export default function Home() {
   return (
-    <main className='font-puls-jakarta-sans  mt-14 relative' >
+    <main className='font-puls-jakarta-sans  mt-14 relative' > 
+    {/*Hero section start*/}
       <div  className='font-puls-jakarta-sans  '> 
         <div className='sm:flex'>
         <div  className="">
@@ -36,7 +39,7 @@ export default function Home() {
               </div> 
 
               
-            <div className='flex sm:absolute sm:bottom-28 sm:left-24 sm:items-center  justify-center  p-10 sm:p-5'>
+            <div className='flex sm:absolute sm:top-[480px] sm:left-24 sm:items-center  justify-center  p-10 xl:p-5'>
             <div className='bg-white items-center justify-center sm:flex p-0 sm:rounded-full sm:p-0'>
             <div className=' p-10 sm:p-1 sm:ml-12'>
               <div className='flex w-64 gap-3  sm:p-1 '>
@@ -66,7 +69,7 @@ export default function Home() {
               </div>
             </div>
             <div className=' p-10 sm:p-1'>
-              <div className='flex w-60 gap-3 p-3 sm:p-1 '>
+              <div className='flex w-64 gap-3 p-3 sm:p-1 '>
                 <Image src={Room} height={0} width={0} alt='room' />
                 <p className="text-xl font-bold">Room</p>
               </div>
@@ -74,22 +77,47 @@ export default function Home() {
               <Modal/>
               </div>
             </div>
-            <div  className='bg-midnight p-6 m-8 sm:m-1 w-60 sm:w-50 sm:p-10 rounded-full flex items-center justify-center   '>
+            <div  className='bg-midnight p-6 m-8 sm:m-0 w-60 sm:w-50 sm:p-10 rounded-full flex items-center justify-center   '>
                 <div className='flex p-3 gap-3 '>
                   <Image src={Search} alt='Search'/>
                   <p className='text-white font-extrabold text-lg '>Search</p>
                 </div>
               </div>
-           
-            </div>
-            
-        </div>  
-                
-                </div> 
+            </div> 
+        </div>              
+      </div>
+       {/*Hero section End*/}  
+
+       {/*Booking section Start*/}  
+
+       <div className="p-3 sm:p-16 xl:p-[128px]">
+        
+        <div>
+            <h1 className='text-3xl sm:text-6xl font-bold'>Best offer this month</h1>
+        </div>
+        <div className='sm:flex justify-between items-center'>
+            <p className='text-silver text-base sm:text-xl'>This can be detailed description or just a short text.</p>
+            <button className='bg-[#cad7d5] w-24 h-10 text-midnight text-base sm:text-lg   rounded-full'>View All</button>     
+        </div>
+        <div className="mt-6">
+        <BookingCarousel/>
+
+        </div>
+        </div>
+        {/*Booking section Start*/}  
+
+        {/*Expore populer holel Start*/} 
+         
+
+
+        
+        
+        
+        
+    
 
               
-             
-    
+              
       
       
 

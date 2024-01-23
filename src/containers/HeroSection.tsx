@@ -18,61 +18,65 @@ export default function HeroSection() {
     <>
     <div  className='font-puls-jakarta-sans  '> 
         <div className='sm:flex'>
-        <div >
+        <div  className="">
                 <Image src={Rectangle} alt='Hero image' width={0} height={0}  priority={true} />          
               </div> 
-             <div className='p-5   '>
-                <div>
-                    <p className='text-3xl  sm:text-6xl '>Experience something new every moment </p>
+             <div className='p-5 sm:p-20 dm:p-24 text-[#cbd1d0] md:ml-15'>
+                <div className='text-2xl sm:gap-4 text-[#000000] sm:text-6xl sm:font-extrabold'>
+                    <p className="sm:m-5" >Experience  </p>
+                    <p className="sm:m-5"> something  </p>
+                    <p className="sm:m-5">new every  </p>
+                    <p className="sm:m-5"> moment </p>
                 </div>
                 <div>
-                <p className=' text-bubble-gum' style={{}}>Escape to a place where you can relax and unwind, rejuvenate, and reconnect</p>
+                <p className=' text-silver font-base sm:m-5 sm:text-xl '>Escape to a place where you can relax and unwind, </p>
+                <p className=' text-silver font-base sm:m-5 sm:text-xl '> rejuvenate, and reconnect</p>
                 </div>                             
              </div>
              
               </div> 
 
               
-            <div className='flex bg-[#F4F9F8]  items-center  justify-center   p-2 rounded-xl'>
-            <div className='bg-white sm:flex sm:p-4'>
-            <div className=' p-6 '>
-              <div className='flex w-64 gap-3 p-3 sm:w-72'>
-                <Image src={Location} alt='loc' />
-                <p>Location</p>
+            <div className='flex sm:absolute sm:top-20 sm:left-24 sm:items-center  justify-center  p-10 sm:p-5'>
+            <div className='bg-white items-center justify-center sm:flex p-2 sm:rounded-full sm:p-0'>
+            <div className=' p-10 sm:p-1 sm:ml-12'>
+              <div className='flex w-64 gap-3  sm:p-1 '>
+                <Image src={Location} width={0} height={0} alt='loc' />
+                <p className="text-xl font-bold ">Location</p>
               </div>
               <div>
               <SearchComponents/>
               </div>
             </div>
-            <div className='p-6  '>
-              <div className='flex w-64 gap-3 p-3 sm:w-72'>
-                <Image src={CheckIn} alt='Checkin' />
-                <p>Check In</p>
+            <div className='p-10 sm:p-1 '>
+              <div className='flex w-64 gap-3 p-3 sm:p-1 '>
+                <Image src={CheckIn} height={0} width={0} alt='Checkin' />
+                <p className="text-xl font-bold">Check In</p>
               </div>
               <div>
               <DatePicker/>
               </div>
             </div>
-            <div className=' p-6 '>
-              <div className='flex w-64 gap-3 p-3 sm:w-72'>
-                <Image src={CheckOut} alt='Check out' />
-                <p>Check Out</p>
+            <div className=' p-10 sm:p-1'>
+              <div className='flex w-64 gap-3 p-3 sm:p-1'>
+                <Image src={CheckOut} height={0} width={0} alt='Check out' />
+                <p className="text-xl font-bold">Check Out</p>
               </div>
               <div>
               <DatePicker/>
               </div>
             </div>
-            <div className=' p-6 '>
-              <div className='flex w-64 gap-3 p-3 sm:w-72'>
-                <Image src={Room} alt='room' />
-                <p>Room</p>
+            <div className=' p-10 sm:p-1'>
+              <div className='flex w-60 gap-3 p-3 sm:p-1 '>
+                <Image src={Room} height={0} width={0} alt='room' />
+                <p className="text-xl font-bold">Room</p>
               </div>
               <div>
               <Modal/>
               </div>
             </div>
-            <div style={{width:226 ,height:120}} className='bg-midnight m-4 p-3 rounded-full flex items-center justify-center sm:p-1  '>
-                <div className='flex p-5  gap-3 sm:p-2'>
+            <div  className='bg-midnight p-6 m-8 sm:m-1 w-60 sm:w-50 sm:p-10 rounded-full flex items-center justify-center   '>
+                <div className='flex p-3 gap-3 '>
                   <Image src={Search} alt='Search'/>
                   <p className='text-white font-extrabold text-lg '>Search</p>
                 </div>
@@ -86,12 +90,10 @@ export default function HeroSection() {
 
               
              
-             
-       
-       
+    
+      
+      
 
-           
-          
           
        
     </>
